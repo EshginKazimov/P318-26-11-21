@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    List<Student> students = Model;
+}
+
+<h1>Home Index</h1>
+
+<ul>
+    @foreach (var item in students)
+    {
+        <li>@item.ToString()</li>
+    }
+</ul>
+
